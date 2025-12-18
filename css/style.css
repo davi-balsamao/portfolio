@@ -17,7 +17,6 @@
     --brand-color: #00B37E;    /* Botões e Cards*/ 
     --accent-hover: #00875F;   /* Efeito hover dos botões e cards*/
 
-    /* --- TAMANHOS (Mobile 375px) --- */
     --font-h1: 26px;
     --font-h2: 20px;
     --font-h3: 16px;
@@ -99,7 +98,6 @@ header {
 .logo {
     font-size: var(--font-h2);
 }
-/* --- BOTÕES E CARDS (ESTILIZAÇÃO GERAL) --- */
 .btn {
     display: inline-block;
     padding: 0px 8px;
@@ -151,7 +149,7 @@ header {
 }
 
 #hero img {
-    width: 100px;        /* Tamanho fixo para mobile */
+    width: 100px;       
     height: 100px;
     border-radius: 50%;  
     object-fit: cover;   /* Garante que a foto não estique/deforme */
@@ -339,7 +337,7 @@ footer {
     }
     
     .nav-menu a:hover {
-        color: var(--brand-color);
+        color: var(--accent-hover);
     }
 
     .projects-grid {
@@ -362,7 +360,7 @@ footer {
         width: 100%;
     }
 }
-/* 10. TELAS Full HD */
+/* TELAS Full HD */
 @media (min-width: 1600px) {
     body {
         max-width: 1440px; 
@@ -627,7 +625,7 @@ footer {
     font-weight: 700;
 }
 
-/*RESPOSIVIDADE*/
+/*RESPOSIVIDADE VIDEOS*/
 @media (min-width: 1024px) {
     .details-container {
         display: grid;
