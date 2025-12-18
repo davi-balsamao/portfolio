@@ -103,3 +103,45 @@ projectButtons.forEach(btn => {
         detailsSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+/** MODAL */
+const contactModal = document.getElementById('contact-modal');
+const closeContactBtn = document.getElementById('close-contact');
+const contactTriggers = document.querySelectorAll('a[href="#contato"]');
+
+contactTriggers.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        contactModal.classList.add('open');
+    });
+});
+
+closeContactBtn.addEventListener('click', () => {
+    contactModal.classList.remove('open');
+});
+
+contactModal.addEventListener('click', (e) => {
+    if (e.target === contactModal) {
+        contactModal.classList.remove('open');
+    }
+});
+
+const copyBtn = document.getElementById('copy-mail-btn');
+const copyText = document.getElementById('copy-text');
+const checkIcon = document.getElementById('check-icon');
+
+copyBtn.addEventListener('click', () => {
+    const email = "davibalsamao@gmail.com";
+    
+    navigator.clipboard.writeText(email).then(() => {
+        copyText.textContent = "E-mail copiado!";
+        copyText.style.color = "#00B37E";
+        checkIcon.style.display = "block";
+
+        setTimeout(() => {
+            copyText.textContent = "Clique para copiar";
+            copyText.style.color = "#A8A8B3";
+            checkIcon.style.display = "none";
+        }, 2000);
+    });
+});
