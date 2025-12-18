@@ -472,3 +472,99 @@ footer {
         height: 350px;
     }
 }
+
+/* =========================================
+   12. SEÇÃO DE DETALHES (Expandida)
+   ========================================= */
+
+/* Classe utilitária para esconder a seção inicialmente */
+.hidden {
+    display: none !important;
+}
+
+#project-details {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    border-top: 1px solid var(--surface-color); /* Uma linha sutil para separar */
+    animation: fadeIn 0.5s ease-in-out; /* Efeito suave ao aparecer */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column-reverse; /* Mobile: Vídeo em cima, Texto embaixo */
+    gap: 40px;
+}
+
+/* --- LADO DO TEXTO --- */
+.details-content h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    color: var(--text-title);
+}
+
+.detail-item {
+    margin-bottom: 24px;
+}
+
+.detail-item h3 {
+    font-size: 16px;
+    color: var(--text-title);
+    margin-bottom: 8px;
+}
+
+.detail-item p, .detail-item li {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.detail-item ul {
+    list-style: disc !important; /* Volta as bolinhas para esta lista específica */
+    padding-left: 20px;
+}
+
+/* --- LADO DO VÍDEO --- */
+.details-media {
+    width: 100%;
+}
+
+.video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Garante formato de vídeo retangular */
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Placeholder temporário (apenas texto enquanto não tem vídeo) */
+.video-placeholder {
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+/* =========================================
+   RESPONSIVIDADE DOS DETALHES (Desktop)
+   ========================================= */
+@media (min-width: 1024px) {
+    .details-container {
+        display: grid;
+        grid-template-columns: 40% 55%; /* Texto na esq, Vídeo maior na dir */
+        justify-content: space-between;
+        align-items: center;
+    }
+}
