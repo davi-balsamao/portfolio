@@ -12,7 +12,7 @@
     --bg-color: #121214;       /* Fundo Principal */
     --surface-color: #202024;  /* Fundo dos Cards */
     --text-primary: #E1E1E6;   /* Texto Corrido */
-    --text-secundary: #A8A8B3;  /*Texto pequeno*/
+    --text-secondary: #A8A8B3;  /*Texto pequeno*/
     --text-title: #FFFFFF;     /* Títulos */
     --brand-color: #00B37E;    /* Botões e Cards*/ 
     --accent-hover: #00875F;   /* Efeito hover dos botões e cards*/
@@ -115,7 +115,6 @@ header {
     text-align: center;
     transition: 0.3s;
     margin-right: 10px;
-    transition: 0.3s;
     background-color: var(--brand-color);
     color: var(--text-title); 
 }
@@ -288,4 +287,188 @@ footer {
 .social-links a:hover {
     color: var(--accent-hover); 
     transform: translateY(-2px); 
+}
+
+/* =========================================
+   8. RESPONSIVIDADE TABLET (768px+)
+   ========================================= */
+@media (min-width: 768px) {
+
+    :root {
+        --font-h1: 40px; /* Era 26px */
+        --font-h2: 32px; /* Era 20px */
+        --font-body: 16px; /* Era 14px */
+    }
+
+    header, section, footer {
+        padding-left: 80px; 
+        padding-right: 80px;
+    }
+
+    #hero {
+        margin-top: 40px; 
+    }
+
+    #hero img {
+        width: 280px;  
+        height: 280px;
+        border-width: 4px; 
+    }
+    
+    #hero div {
+        max-width: 50%; 
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+/* =========================================
+   9. RESPONSIVIDADE DESKTOP (1024px+)
+   ========================================= */
+@media (min-width: 1024px) {
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto; /* Centraliza o site */
+        position: relative; /* Alinhamento funcionar */
+    }
+
+    .mobile-menu-icon {
+        display: none; 
+    }
+
+    .nav-menu {
+        display: block; 
+    }
+
+    .nav-menu ul {
+        display: flex; 
+        gap: 32px;    
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    
+    .nav-menu a:hover {
+        color: var(--brand-color);
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 24px;
+    }
+
+    .project-card {
+        flex-direction: column; /* Imagem em cima, texto embaixo */
+        gap: 12px;
+    }
+
+    .project-card img {
+        width: 100%;   
+        height: 160px;  
+    }
+
+    .card-content {
+        width: 100%;
+    }
+}
+/* =========================================
+   10. TELAS Full HD
+   ========================================= */
+@media (min-width: 1600px) {
+    body {
+        max-width: 1440px; 
+    }
+
+    :root {
+        --font-h1: 56px;   
+        --font-h2: 40px;
+        --font-body: 18px; /
+    }
+
+    .projects-grid {
+        gap: 40px;
+    }
+}
+/* =========================================
+   10. TELAS 2K (QHD - 2560px)
+   ========================================= */
+@media (min-width: 2000px) {
+    body {
+        max-width: 1800px; 
+    }
+
+    :root {
+        --font-h1: 64px;   
+        --font-h2: 48px;
+        --font-h3: 32px;
+        --font-body: 20px; 
+    }
+
+    #hero img {
+        width: 350px;
+        height: 350px;
+        border-width: 6px;
+    }
+
+    .projects-grid {
+        gap: 40px;
+    }
+
+    .project-card img {
+        height: 220px; 
+    }
+}
+
+/* =========================================
+   11. TELAS 4K (UHD - 3840px)
+   ========================================= */
+@media (min-width: 3000px) {
+    body {
+        max-width: 2800px; 
+    }
+
+    :root {
+        --font-h1: 96px;   
+        --font-h2: 64px;
+        --font-body: 28px; /
+    }
+
+    .btn, .tech-tag {
+        font-size: 24px;
+        padding: 16px 32px;
+        border-width: 3px;
+    }
+    
+    .techs {
+        gap: 24px;
+    }
+
+    #hero img {
+        width: 500px;
+        height: 500px;
+        border-width: 10px;
+    }
+    
+    header, section, footer {
+        padding: 60px 0; 
+    }
+    
+    .projects-grid {
+        gap: 60px;
+    }
+    
+    .project-card {
+        padding: 32px;
+    }
+
+    .project-card img {
+        height: 350px;
+    }
 }
