@@ -11,7 +11,7 @@ const projectsData = {
             "Tratamento de Exceções",
             "Documentação Doxygen"
         ],
-        link: "https://github.com/davi-balsamao/duocode",
+        link: "https://github.com/pds2-dcc-ufmg/2025-2-TN1-TN2-grupo08.git",
         videoSrc: "./img/videoDuoCode.mp4" 
     },
     git: {
