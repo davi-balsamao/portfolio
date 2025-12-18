@@ -2,7 +2,7 @@ const projectsData = {
     duocode: {
         title: "DuoCode",
         objective: "Inspirado no Duolingo, o DuoCode é uma jogo que te ensina os conceitos de C++",
-        techs: "O jogo foi feito inteiramente em C++, e para a interface gráfica foi utilizado o raylib. O versionamento do jogo foi feito pelo GitHub.",
+        techs: "O jogo foi feito inteiramente em C++, e para a interface gráfica foi utilizado o raylib. O versionamento do jogo foi feito pelo GitHub. Na época que foi feito eu não tinha conhecimento sobre GitHub, logo este projeto não possui um repositório.",
         concepts: [
             "Classes e Objetos",
             "Polimorfismo",
