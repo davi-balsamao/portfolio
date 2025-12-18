@@ -10,8 +10,8 @@ Um portfólio web moderno, responsivo e interativo, desenvolvido para apresentar
 
 O projeto foi construído sem o uso de frameworks pesados, focando no domínio da linguagem pura (**JS** e **CSS Puro**).
 
-* ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) **Estrutura Semântica**
-* ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) **Flexbox, Grid & Media Queries**
+* ![HTML5](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html&logoColor=white) **Estrutura Semântica**
+* ![CSS3](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) **Flexbox, Grid & Media Queries**
 * ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) **Manipulação de DOM & Lógica Dinâmica**
 * ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white) **Prototipagem de UI/UX**
 * ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) **Controle de Versão**
