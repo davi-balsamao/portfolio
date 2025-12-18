@@ -371,7 +371,7 @@ footer {
     :root {
         --font-h1: 56px;   
         --font-h2: 40px;
-        --font-body: 18px; /
+        --font-body: 18px; 
     }
 
     .projects-grid {
@@ -415,7 +415,7 @@ footer {
     :root {
         --font-h1: 96px;   
         --font-h2: 64px;
-        --font-body: 28px; /
+        --font-body: 28px; 
     }
 
     .btn, .tech-tag {
