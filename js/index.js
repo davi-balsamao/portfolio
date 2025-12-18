@@ -2,7 +2,7 @@ const projectsData = {
     duocode: {
         title: "DuoCode",
         objective: "Inspirado no Duolingo, o DuoCode é uma jogo que te ensina os conceitos de C++",
-        techs: "O jogo foi feito inteiramente em C++, e para a interface gráfica foi utilizado o raylib. O versionamento do jogo foi feito pelo GitHub. Na época que foi feito eu não tinha conhecimento sobre GitHub, logo este projeto não possui um repositório.",
+        techs: "O jogo foi feito inteiramente em C++, e para a interface gráfica foi utilizado o raylib. O versionamento do jogo foi feito pelo GitHub. ",
         concepts: [
             "Classes e Objetos",
             "Polimorfismo",
@@ -29,7 +29,7 @@ const projectsData = {
     spaceinvaders: {
         title: "Space Invaders",
         objective: "Simular o jogo Space Invaders, em que o objetivo do jogo é destruir todas as naves inimigas sem deixar que cheguem ao final da tela",
-        techs: "O jogo foi todo feito na Linguagem C, e foi utilizado a biblioteca allegro para interface gráfica",
+        techs: "O jogo foi todo feito na Linguagem C, e foi utilizado a biblioteca allegro para interface gráfica. Na época que foi feito eu não tinha conhecimento sobre GitHub, logo este projeto não possui um repositório.",
         concepts: [
             "Módularização de código",
             "Ponteiros e manipulação",
